@@ -2,7 +2,10 @@
 # Laboratorium 1
 
 1. Skopiować zawartość niniejszego repozytorium
-na dysk lokalny i rozpakować plik `polski.zip`:
+na dysk lokalny i rozpakować plik `polski.zip`.
+Uwaga: Nie korzystać z opcji *Download ZIP*, która
+pomija duże pliki, niezbędne w tym laboratorium.
+
 
 ```
     git clone https://github.com/PK-PJN-NS/laboratorium-1.git
@@ -120,9 +123,14 @@ wyrazów wraz z częstością ich wystąpień. Uwagi:
 wykresu pokrycia tekstu przez wyrazy. *N*-ty element
 tablicy `y` ma być równy sumie częstości wyrazów
 od pierwszego do *N*-tego pod względem malejącej
-częstości. Uwaga:
+częstości. Uwagi:
 
     * Kształt tego wykresu jest konsekwencją prawa Zipfa.
+
+    * Jeśli wykres nie przypomina linii prostej, sprawdzić
+    sposób wypełniania tablicy `y`. Suma częstości wyrazów
+    od pierwszego do *N*-tego to nie to samo, co suma
+    elementów `y[0:N]`.
 
 7. Uzupełnić funkcję `jednoznaczna_forma_podstawowa()` tak,
 aby zwracała ona:
@@ -151,7 +159,23 @@ aby zwracała ona:
 
 8. W funkcji `main()` dodać zliczanie form podstawowych wyrazów
 i rysowanie wykresów częstości ich wystąpień oraz pokrycia
-przez nie tekstu.
+przez nie tekstu. Uwagi:
+
+    * Jeśli wykresy nie przypominają linii prostych, tylko
+    parabole, sprawdzić, czy wybrano dla nich skalę
+    logarytmiczną na osi *x* i ewentualnie *y*.
+
+    * Jeśli wykresy nie przypominają linii prostych, tylko
+    są pogięte, sprawdzić sposób iterowania po kolekcji
+    `formy`. Metoda `.values()` nie zwraca liczników
+    w kolejności malejącej. Zamiast niej należy użyć metody
+    `.most_common()`.
+
+    * Jeśli wykresy nadal nie przypominają linii prostych,
+    wypisać najczęstsze formy podstawowe. Jeśli są one
+    podobne do `[('być', 41), ('móc', 32), ('znać', 32),...`,
+    sprawdzić, skąd są pobierane formy. Kolekcja `wyrazy`
+    to nie to samo, co generator `podaj_wyrazy(KSIĄŻKA)`.
 
 9. W sprawozdaniu zamieścić nazwiska autorów, uzupełnioną
 zawartość pliku `zadanie.py`, tytuł wybranej książki,
