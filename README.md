@@ -6,19 +6,18 @@ na dysk lokalny i rozpakować plik `polski.zip`.
 Uwaga: Nie korzystać z opcji *Download ZIP*, która
 pomija duże pliki, niezbędne w tym laboratorium.
 
-
-```
+    ```
     git clone https://github.com/PK-PJN-NS/laboratorium-1.git
     cd laboratorium-1
     unzip polski.zip
-```
+    ```
 
 2. Zainstalować `matplotlib` — zewnętrzną bibliotekę Pythona,
 która służy do tworzenia wykresów:
 
-```
+    ```
     pip install matplotlib
-```
+    ```
 
 3. Pobrać z serwisu https://wolnelektury.pl dowolną książkę
 w postaci pliku tekstowego i przypisać nazwę tego pliku
@@ -40,7 +39,7 @@ usunie kropki, stanowiące część skrótów, na przykład
     kodu, który zaczyna się tak:
 
     ```python
-        with open(nazwa_pliku, 'rt') as plik:
+        with open(nazwa_pliku, 'rt', encoding='utf-8') as plik:
     ```
 
     * najprościej jest wczytać całą zawartość pliku
