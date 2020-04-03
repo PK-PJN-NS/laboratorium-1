@@ -1,5 +1,5 @@
 # Przetwarzanie języka naturalnego
-# Laboratorium 1
+# Laboratorium 1: prawo Zipfa
 
 1. Skopiować zawartość niniejszego repozytorium
 na dysk lokalny i rozpakować plik `polski.zip`.
