@@ -2,9 +2,7 @@
 # Laboratorium 1: prawo Zipfa
 
 1. Skopiować zawartość niniejszego repozytorium
-na dysk lokalny i rozpakować plik `polski.zip`.
-Uwaga: Nie korzystać z opcji *Download ZIP*, która
-pomija duże pliki, niezbędne w tym laboratorium.
+na dysk lokalny. Pobrać i rozpakować plik [polski.zip](https://drive.google.com/file/d/1xrXtXsoAfhrW4P4KLykxwkg7OzM6eQ1r/view?usp=sharing).
 
     ```
     git clone https://github.com/PK-PJN-NS/laboratorium-1.git
